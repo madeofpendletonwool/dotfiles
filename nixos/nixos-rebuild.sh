@@ -13,7 +13,7 @@
 set -e
 
 # Edit your config
-$EDITOR configuration.nix
+$EDITOR collinp-framework.nix
 
 # cd to your config dir
 pushd ~/dotfiles/nixos/
@@ -42,7 +42,7 @@ current=$(nixos-rebuild list-generations | grep current)
 
 # Commit all changes witih the generation metadata
 git commit -am "$current"
-
+git push
 # Back to where you were
 popd
 
