@@ -5,8 +5,7 @@
   config,
   pkgs,
   ...
-}:
-{
+}: {
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -122,6 +121,7 @@
     azure-cli
     bitwarden
     mpv
+    citra-nightly
     gcc
     vivaldi
     zlib
