@@ -137,6 +137,7 @@
     jq
     yq
     pciutils
+    meshlab
   ];
 
   programs.hyprland.enable = true;
