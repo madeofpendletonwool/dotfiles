@@ -132,6 +132,7 @@
     gnome.gnome-tweaks
     mgba
     libnotify
+    solaar
   ];
 
   programs.hyprland.enable = true;
