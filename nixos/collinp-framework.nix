@@ -94,6 +94,8 @@
 
   environment.variables.EDITOR = "vim";
 
+  environment.variables.LD_LIBRARY_PATH = "/nix/store/iap7s5szjmczi1yc3yfxkzbv0cmr6h02-libz-unstable-2018-03-31/lib:$LD_LIBRARY_PATH";
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
