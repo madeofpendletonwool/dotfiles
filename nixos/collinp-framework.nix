@@ -138,6 +138,7 @@
     yq
     pciutils
     meshlab
+    tailscale
   ];
 
   programs.hyprland.enable = true;
