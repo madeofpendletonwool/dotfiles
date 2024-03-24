@@ -133,6 +133,10 @@
     mgba
     libnotify
     solaar
+    usbutils
+    jq
+    yq
+    pciutils
   ];
 
   programs.hyprland.enable = true;
