@@ -121,7 +121,6 @@
     azure-cli
     bitwarden
     mpv
-    citra-nightly
     gcc
     vivaldi
     zlib
