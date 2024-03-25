@@ -136,6 +136,7 @@
     gnome.gnome-tweaks
     mgba
     onlyoffice-bin
+    canon-cups-ufr2
     libnotify
     solaar
     usbutils
