@@ -137,6 +137,7 @@
     mgba
     onlyoffice-bin
     canon-cups-ufr2
+    cups-bjnp
     libnotify
     solaar
     usbutils
