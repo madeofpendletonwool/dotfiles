@@ -53,7 +53,10 @@
   };
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [canon-cups-ufr2 gutenprint cups-filters cups-bjnp];
+  };
 
   # Enable sound with pipewire.
   sound.enable = true;
