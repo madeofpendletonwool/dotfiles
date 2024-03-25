@@ -135,6 +135,7 @@
     nextcloud-client
     gnome.gnome-tweaks
     mgba
+    onlyoffice-bin
     libnotify
     solaar
     usbutils
