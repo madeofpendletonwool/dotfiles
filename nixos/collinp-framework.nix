@@ -5,8 +5,21 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  nixvim = import (builtins.fetchGit {
+    url = "https://github.com/nix-community/nixvim";
+    # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
+    # ref = "nixos-23.05";
+  });
+in {
+  imports = [
+    # For NixOS
+    nixvim.nixosModules.nixvim
+  ];
+
+  programs.nixvim.enable = true;
   # Bootloader.
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -104,6 +117,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
