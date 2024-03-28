@@ -21,6 +21,44 @@ in {
     enable = true;
     plugins.comment.enable = true;
     plugins.lualine.enable = true;
+    plugins.lsp = {
+      enable = true;
+      servers = {
+        lua-ls.enable = true;
+        rust-analyzer.enable = true;
+        pyright.enable = true;
+        yamlls.enable = true;
+        terraformls.enable = true;
+        sqls.enable = true;
+        nixd.enable = true;
+        marksman.enable = true;
+        jsonls.enable = true;
+        html.enable = true;
+        helm-ls.enable = true;
+        gopls.enable = true;
+        dockerls.enable = true;
+        cssls.enable = true;
+        ansiblels.enable = true;
+      };
+    };
+    plugins.cmp = {
+      enable = true;
+      autoEnableSources = true;
+      extraOptions.sources = [
+        {
+          name = "nvim_lsp";
+        }
+        {
+          name = "luasnip";
+        }
+        {
+          name = "path";
+        }
+        {
+          name = "buffer";
+        }
+      ];
+    };
     extraPlugins = with pkgs.vimPlugins; [
       vim-nix
       nvim-web-devicons
