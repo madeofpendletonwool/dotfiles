@@ -118,7 +118,7 @@ in {
 
   virtualisation.docker.enable = true;
 
-  environment.variables.EDITOR = "vim";
+  environment.variables.EDITOR = "nvim";
 
   environment.variables.LD_LIBRARY_PATH = "/nix/store/iap7s5szjmczi1yc3yfxkzbv0cmr6h02-libz-unstable-2018-03-31/lib:$LD_LIBRARY_PATH";
   environment.sessionVariables = rec {
