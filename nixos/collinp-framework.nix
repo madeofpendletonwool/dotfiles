@@ -19,6 +19,7 @@ in {
 
   programs.nixvim = {
     enable = true;
+    plugins.comment.enable = true;
     extraPlugins = with pkgs.vimPlugins; [
       vim-nix
     ];
