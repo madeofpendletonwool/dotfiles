@@ -20,8 +20,10 @@ in {
   programs.nixvim = {
     enable = true;
     plugins.comment.enable = true;
+    plugins.lualine.enable = true;
     extraPlugins = with pkgs.vimPlugins; [
       vim-nix
+      nvim-web-devicons
     ];
     colorschemes.gruvbox.enable = true;
     options = {
