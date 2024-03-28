@@ -17,7 +17,17 @@ in {
     nixvim.nixosModules.nixvim
   ];
 
-  programs.nixvim.enable = true;
+  programs.nixvim = {
+    enable = true;
+    extraPlugins = with pkgs.vimPlugins; [
+      vim-nix
+    ];
+    colorschemes.gruvbox.enable = true;
+    options = {
+      number = true;
+      relativenumber = true;
+    };
+  };
   # Bootloader.
 
   boot.loader.systemd-boot.enable = true;
@@ -177,10 +187,10 @@ in {
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [22];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
