@@ -214,6 +214,7 @@ in {
     pciutils
     meshlab
     tailscale
+    python3
   ];
 
   programs.hyprland.enable = true;
