@@ -215,6 +215,7 @@ in {
     meshlab
     tailscale
     python3
+    python311Packages.pip
   ];
 
   programs.hyprland.enable = true;
