@@ -193,6 +193,7 @@ in {
     flatpak
     azure-cli
     bitwarden
+    ungoogled-chromium
     mpv
     gcc
     vivaldi
