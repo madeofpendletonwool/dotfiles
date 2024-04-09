@@ -204,6 +204,7 @@ in {
     nextcloud-client
     gnome.gnome-tweaks
     mgba
+    pkg-config
     onlyoffice-bin
     canon-cups-ufr2
     cups-bjnp
