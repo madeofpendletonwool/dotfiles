@@ -195,6 +195,7 @@ in {
     libsoup_3
     flatpak
     azure-cli
+    cargo-tauri
     bitwarden
     ungoogled-chromium
     mpv
