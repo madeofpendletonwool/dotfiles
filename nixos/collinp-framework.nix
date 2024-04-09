@@ -203,6 +203,7 @@ in {
     libz
     libz.dev
     zlib.dev
+    haskellPackages.gi-javascriptcore
     nextcloud-client
     gnome.gnome-tweaks
     mgba
