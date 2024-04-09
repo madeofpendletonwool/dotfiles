@@ -183,6 +183,7 @@ in {
     zsh
     neofetch
     htop
+    haskellPackages.webkit2gtk3-javascriptcore
     btop
     alejandra
     gnome.gnome-terminal
