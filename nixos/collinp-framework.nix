@@ -190,6 +190,8 @@ in {
     jetbrains.rust-rover
     jetbrains.pycharm-professional
     meld
+    libsoup
+    libsoup_3
     flatpak
     azure-cli
     bitwarden
